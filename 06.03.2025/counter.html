@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <body style="background-color: rgb(255, 205, 225) ;">
+        <h1 style="background-color: rgb(250, 229, 203);" >counter</h1>
+        <p style=" background-color: rgb(243, 189, 189);" id="counter">0</p>
+        <button onclick="add()">+1</button>
+        <button onclick="sub()">-1</button>
+        <button onclick="reset()">reset</button>
+    </center>
+        <script>
+            var count=0
+            function add(){
+                count=count+1
+                document.getElementById('counter').innerHTML=count
+                
+            }
+            function sub(){
+                count=count-1
+                document.getElementById('counter').innerHTML=count
+                
+            }
+            function reset(){
+                count=0
+                document.getElementById('counter').innerHTML=count
+            } 
+            
+                 
+            </script>
+    </body>

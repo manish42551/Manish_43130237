@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>counter</title>
+    <style>
+        .margin{
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+            background-color: black;
+        }
+        .box{
+            background-color: blue;
+            margin left:300px
+            justify-content:center;
+            display:flex;
+            margin-top:100px;
+            margin-left:250px;
+            margin-right:250px;
+            align-items:center;
+            padding-left:0%;
+
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <body class="box"style="background-color: rgb(210, 202, 205) ;">
+        <h1 style="background-color: rgb(249, 247, 244);" >counter</h1>
+        <p class="margin" style=" background-color: rgb(243, 100, 100);" id="counter">0</p>
+        <button class="margin"style="background-color:rgb(243,189,256)" onclick="add()">+1</button>
+        <button class="margin"style="background-color:rgb(243,189,256)" onclick="sub()">-1</button><br>
+        <button class="margin" style="background-color:rgb(243,189,256)"onclick="reset()">reset</button>
+    </center>
+        <script>
+            var count=0
+            function add(){
+                count=count+1
+                document.getElementById('counter').innerHTML=count
+                
+            }
+            function sub(){
+                count=count-1
+                document.getElementById('counter').innerHTML=count
+                
+            }
+            function reset(){
+                count=0
+                document.getElementById('counter').innerHTML=count
+            } 
+            
+                 
+            </script>
+    </body>
